@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Input } from "../Input/Input";
+import { EmptyToDo } from "../Todo/EmptyToDo";
 import { ToDo } from "../Todo/ToDo";
 
 import styles from "./Tasks.module.css";
@@ -47,7 +48,9 @@ export function TaskContainer() {
             </strong>
           
         </div>
-        {tasks.map((content, index) => (
+        {tasks.length === 0 ? <EmptyToDo /> :
+        <div>
+          {tasks.map((content, index) => (
           <ToDo
             handleIsComplete={handleIsComplete}
             onDeleteTask={handleRemoveTask}
@@ -56,6 +59,9 @@ export function TaskContainer() {
             task={content}
           />
         ))}
+        </div>
+        }
+        
         
         
         
