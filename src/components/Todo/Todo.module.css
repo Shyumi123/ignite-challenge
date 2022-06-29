@@ -1,0 +1,47 @@
+.todoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+
+  padding: 1rem;
+
+  width: 46rem;
+  min-height: 5rem;
+}
+
+.todoContent {
+  display: flex;
+  width: 90%;
+  word-break: break-all;
+}
+
+.todoContent span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--gray-100);
+  padding-left: 0.5rem;
+}
+
+.todoContent img {
+  padding-left: 0.5rem;
+}
+
+.trashBin {
+  margin-right: 0.5rem;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer; 
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.isActive span{
+  background: red;
+}

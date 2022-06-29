@@ -1,15 +1,17 @@
 import { Header } from "./components/Header/Header"
-import { Tasks } from "./components/Tasks/Tasks";
+import { TaskContainer } from "./components/Tasks/TaskContainer";
+
 
 import "./global.css";
 
 function App() {
 
   return (
-    <div>
+    <div style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <Header />
-      <Tasks />
+      <TaskContainer />
     </div>
+    
   )
 }
 
