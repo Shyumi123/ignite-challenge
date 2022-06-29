@@ -23,7 +23,7 @@ export function Input({setTasks, tasks}: Input) {
   
   return (
     <form onSubmit={handleAddTask} className={styles.inputContainer}>
-      <input value={newTask} onChange={e => setNewTask(e.target.value)} type="text" placeholder="Add a new task" />
+      <input required value={newTask} onChange={e => setNewTask(e.target.value)} type="text" placeholder="Add a new task" />
 
       <button type="submit">
         <div className={styles.buttonWrapper}>
